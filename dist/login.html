@@ -53,52 +53,41 @@
     <!----------------------------------------------
                           Start Register
 -------------------------------------------------->
-    <section class="register dark-overlay">
+    <section class="login py-5">
       <div class="container">
         <div class="row">
           <div class="col-10 mx-auto">
-            <h1 class="text-capitalize text-primary mb-2">sign up</h1>
+            <div class="alert alert-danger">
+              Invalid Credentials
+            </div>
+            <!-- Error Message Handling -->
+
+            <h1 class="text-capitalize text-primary mb-2">sign in</h1>
             <h4 class="text-capitalize mb-3">
               <i class="fas fa-user text-primary"></i>
-              create your account
+              Sign into your account
             </h4>
             <form action="dashboard.html" class="form">
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Name"
-                  required
-                />
-              </div>
               <div class="form-group">
                 <input
                   type="email"
                   class="form-control"
                   placeholder="Email Address"
                 />
-                <small class="form-text"
-                  >This site use Gravatar. So if you want a profile image. Use a
-                  Gravatar email.</small
-                >
               </div>
               <div class="form-group">
                 <input
-                  type="email"
+                  type="password"
                   class="form-control"
-                  placeholder="Confirm Email Address"
+                  placeholder="Password"
                   required
                 />
               </div>
-              <input
-                type="submit"
-                class="btn primary-linked"
-                value="Register"
-              />
+              <input type="submit" class="btn primary-linked" value="Login" />
             </form>
             <p class="my-1">
-              Already have an account?
-              <a href="login.html">Sing in</a>
+              Don't have an account?
+              <a href="login.html">Sing up</a>
             </p>
           </div>
         </div>
