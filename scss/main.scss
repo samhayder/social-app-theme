@@ -1,5 +1,169 @@
-$primary-color: #444;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+/*Import*/
+@import 'config';
+@import 'utility';
+
+/* Template Main Color*/
+$primaryColor: #17a2b8;
+$secondaryColor: #343a40;
+$mainWhite: #ffffff;
+$mainBlack: #000000;
+$mainDark: #f4f4f4;
+$mainDanger: #dc3545;
+$mainSuccess: #28a745;
+
+//Set Text Color
+@function setTextColor($color) {
+  @if (lightness($color) > 50) {
+    @return $mainBlack;
+  } @else {
+    @return $mainWhite;
+  }
+}
+
+//Set Background & text color
+@mixin setBackground($color) {
+  background: $color;
+  color: setTextColor($color);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 body {
-  background: $primary-color;
+  font-family: 'Raleway', sans-serif;
+  color: $mainBlack;
+  font-size: 1rem;
+  line-height: 1.5;
 }
+
+a {
+  text-decoration: none;
+  @include ease();
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.text-primary {
+  color: $primaryColor;
+}
+.text-secondary {
+  color: $secondaryColor;
+}
+.text-white {
+  color: $mainWhite;
+}
+
+//Button linked
+.primary-linked {
+  text-transform: capitalize;
+  padding: 0.4rem 1.3rem;
+  color: setTextColor(#444);
+  @include setBackground($primaryColor);
+  @include ease;
+  &:hover {
+    background: lighten($mainDark, 5%);
+  }
+}
+.light-linked {
+  @extend .primary-linked;
+  @include setBackground($mainDark);
+  &:hover {
+    background: lighten($primaryColor, 10%);
+  }
+}
+
+/*------------------------------
+            Nav css
+--------------------------------*/
+nav {
+  height: 60px;
+  background: $secondaryColor;
+  border-bottom: 0.2rem solid $primaryColor;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+
+  .title {
+    font-size: 3rem;
+  }
+
+  ul {
+    li {
+      list-style: none;
+      display: inline-block;
+      a {
+        color: $mainWhite;
+        @include ease;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+/*------------------------------
+            Landing page css
+--------------------------------*/
+.landing-page {
+  min-height: calc(100vh - 60px);
+  background: url('../img/landing-bg.jpg') center center/cover no-repeat;
+  color: $mainWhite;
+
+  .inner-overlay-content {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      font-weight: 700;
+    }
+  }
+}
+//Dark Overlay
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/*------------------------------
+            Register Page css
+--------------------------------*/
+.register {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/*------------------------------
+            Homepage css
+--------------------------------*/
+
+/*------------------------------
+            Homepage css
+--------------------------------*/
+
+/*------------------------------
+            Homepage css
+--------------------------------*/
+
+/*------------------------------
+            Responsive css
+--------------------------------*/
+@import 'responsive';

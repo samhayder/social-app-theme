@@ -1,0 +1,26 @@
+//Widescreen => Extra large devices (large desktops, 1200px and up)
+@include mediaXl() {
+
+}
+
+//Desktop & Laptop => Large devices (desktops, 992px and up 1199px)
+@include mediaLg() {
+
+}
+
+//Tablets & Small Laptop => Medium devices (tablets, 768px and up 991px)
+@include mediaMd() {
+
+}
+
+//Smartphone => Small devices (landscape phones, 576px and up)
+@include mediaSm() {
+
+}
+
+// Extra small devices (portrait phones, less than -576px)
+@include mediaXs() {
+
+}
+
+

@@ -1,0 +1,69 @@
+/* Template Main Color*/
+$primaryColor: #17a2b8;
+$secondaryColor: #343a40;
+$mainWhite: #ffffff;
+$mainBlack: #000000;
+$mainDark: #f4f4f4;
+$mainDanger: #dc3545;
+$mainSuccess: #28a745;
+
+//Set Text Color
+@function setTextColor($color) {
+  @if (lightness($color) > 50) {
+    @return $mainBlack;
+  } @else {
+    @return $mainWhite;
+  }
+}
+
+/* Transition Effect */
+@mixin ease {
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+@mixin threeD($value1, $value2, $value3) {
+  transform: translate3d($value1, $value2, $value3);
+  -webkit-transform: translate3d($value1, $value2, $value3);
+  -moz-transform: translate3d($value1, $value2, $value3);
+  -ms-transform: translate3d($value1, $value2, $value3);
+  -o-transform: translate3d($value1, $value2, $value3);
+}
+
+//Media query
+// Extra small devices (portrait phones, less than -576px)
+@mixin mediaXs {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin mediaSm {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin mediaMd {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin mediaLg {
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@mixin mediaXl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
