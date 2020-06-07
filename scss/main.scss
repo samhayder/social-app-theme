@@ -11,6 +11,7 @@ $secondaryColor: #343a40;
 $mainWhite: #ffffff;
 $mainBlack: #000000;
 $mainDark: #f4f4f4;
+$mainGray: #cccccc;
 $mainDanger: #dc3545;
 $mainSuccess: #28a745;
 
@@ -143,14 +144,64 @@ nav {
 }
 
 /*------------------------------
-            Register Page css
+            Profile Page css
 --------------------------------*/
-/* .register {
-  min-height: calc(100vh - 60px);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-} */
+.profile {
+  h2 {
+    color: $primaryColor;
+  }
+  &-info {
+    background: $primaryColor;
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
+
+    .social-link {
+      a {
+        color: $mainWhite;
+        font-size: 1.5rem;
+        &:hover {
+          color: $mainGray;
+        }
+      }
+    }
+  }
+
+  &-about {
+    background: $mainGray;
+
+    &-info {
+      border-bottom: 0.1rem solid $mainDark;
+    }
+  }
+
+  &-exp,
+  &-edu {
+    border: 0.1rem solid $mainGray;
+    padding: 1rem;
+  }
+  &-exp {
+    .single-exp:nth-child(2) {
+      border-bottom: 0.1rem solid $mainDark;
+    }
+  }
+
+  &-github {
+    .github-repo {
+      border: 0.1rem solid $mainGray;
+      padding: 0.5rem;
+
+      ul {
+        display: inline-grid;
+        li {
+          margin: 0.4rem 0;
+        }
+      }
+    }
+  }
+}
 /*------------------------------
             Homepage css
 --------------------------------*/
