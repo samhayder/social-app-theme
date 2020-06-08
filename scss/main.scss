@@ -203,9 +203,17 @@ nav {
   }
 }
 /*------------------------------
-            Homepage css
+            Posts css
 --------------------------------*/
-
+.posts {
+  .col-10 {
+    padding: 0;
+  }
+  .post-single {
+    border: 0.1rem solid $mainGray;
+    padding: 1rem;
+  }
+}
 /*------------------------------
             Homepage css
 --------------------------------*/
