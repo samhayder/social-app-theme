@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 /* font-family: 'Raleway', sans-serif; */
-/*Import*/
 /* Template Main Color*/
 /* Transition Effect */
-/* Template Main Color*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -24,6 +22,12 @@ a {
   -o-transition: all 1s ease; }
   a:hover {
     text-decoration: none; }
+
+.text-primary {
+  color: #17a2b8; }
+
+.text-secondary {
+  color: #343a40; }
 
 .text-white {
   color: #ffffff; }
@@ -52,7 +56,6 @@ a {
             Nav css
 --------------------------------*/
 nav {
-  height: 60px;
   background: #343a40;
   border-bottom: 0.2rem solid #17a2b8;
   position: fixed;
@@ -101,8 +104,48 @@ nav {
   background: rgba(0, 0, 0, 0.7); }
 
 /*------------------------------
-            Homepage css
+            Profile Page css
 --------------------------------*/
+.profile h2 {
+  color: #17a2b8; }
+
+.profile-info {
+  background: #17a2b8; }
+  .profile-info img {
+    width: 250px;
+    height: 250px; }
+  .profile-info .social-link a {
+    color: #ffffff;
+    font-size: 1.5rem; }
+    .profile-info .social-link a:hover {
+      color: #cccccc; }
+
+.profile-about {
+  background: #cccccc; }
+  .profile-about-info {
+    border-bottom: 0.1rem solid #f4f4f4; }
+
+.profile-exp, .profile-edu {
+  border: 0.1rem solid #cccccc;
+  padding: 1rem; }
+
+.profile-exp .single-exp:nth-child(2) {
+  border-bottom: 0.1rem solid #f4f4f4; }
+
+.profile-github .github-repo {
+  border: 0.1rem solid #cccccc;
+  padding: 0.5rem; }
+  .profile-github .github-repo ul {
+    display: inline-grid; }
+    .profile-github .github-repo ul li {
+      margin: 0.4rem 0; }
+
 /*------------------------------
-            Responsive css
+            Posts css
 --------------------------------*/
+.posts .col-10 {
+  padding: 0; }
+
+.posts .post-single {
+  border: 0.1rem solid #cccccc;
+  padding: 1rem; }

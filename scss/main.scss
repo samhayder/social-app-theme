@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 /* font-family: 'Raleway', sans-serif; */
 
-/*Import*/
-@import 'config';
-@import 'utility';
-
 /* Template Main Color*/
 $primaryColor: #17a2b8;
 $secondaryColor: #343a40;
@@ -23,11 +19,19 @@ $mainSuccess: #28a745;
     @return $mainWhite;
   }
 }
-
 //Set Background & text color
 @mixin setBackground($color) {
   background: $color;
   color: setTextColor($color);
+}
+
+/* Transition Effect */
+@mixin ease {
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
 }
 
 * {
@@ -85,7 +89,6 @@ a {
             Nav css
 --------------------------------*/
 nav {
-  height: 60px;
   background: $secondaryColor;
   border-bottom: 0.2rem solid $primaryColor;
   position: fixed;
@@ -214,15 +217,3 @@ nav {
     padding: 1rem;
   }
 }
-/*------------------------------
-            Homepage css
---------------------------------*/
-
-/*------------------------------
-            Homepage css
---------------------------------*/
-
-/*------------------------------
-            Responsive css
---------------------------------*/
-@import 'responsive';
