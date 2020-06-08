@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard || Social App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap v4 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome v5 Kit -->
+    <script
+      src="https://kit.fontawesome.com/9e98f3d98f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+
+  <body>
+    <!----------------------------------------------
+                          Start Header 
+-------------------------------------------------->
+    <nav class="navbar px-3">
+      <h1 class="navbar-brand text-white mb-0">
+        <a href="dashboard.html" class="text-white">
+          <i class="fas fa-code"></i> DevConnector
+        </a>
+      </h1>
+      <ul class="menu-nav mb-0">
+        <li class="menu-item mx-2">
+          <a href="profile.html" class="menu-link text-capitalize">developer</a>
+        </li>
+        <li class="menu-item mx-2">
+          <a href="posts.html" class="menu-link text-capitalize">posts</a>
+        </li>
+        <li class="menu-item mx-2">
+          <a href="dashboard.html" class="menu-link text-capitalize">
+            <i class="fas fa-user"></i>
+            <span class="hide-sm">dashboard</span>
+          </a>
+        </li>
+        <li class="menu-item mx-2">
+          <a href="login.html" class="menu-link text-capitalize">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="hide-sm">logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!----------------------------------------------
+                          End Header 
+-------------------------------------------------->
+    <!----------------------------------------------
+                          Start Add Education
+-------------------------------------------------->
+    <section class="add-education py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 mx-auto col-md-12">
+            <h1 class="text-capitalize text-primary">Add your education</h1>
+            <h6 class="text-capitalize">
+              <i class="fas fa-graduation-cap"></i>
+              Add any school bootcamp, etc that you have attended
+            </h6>
+          </div>
+          <!-- end of row Add Education title -->
+
+          <div class="col-10 mx-auto col-md-12 my-3 exp-form">
+            <small>* = required field</small>
+            <form class="form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="* School or Bootcamp"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="* Degree or Certificate"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Field Of Study"
+                />
+              </div>
+              <div class="form-group">
+                <label for="from-date">From Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="mm/dd/yyyy"
+                />
+              </div>
+              <div class="form-group">
+                <label for="to-date">To Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="mm/dd/yyyy"
+                />
+              </div>
+              <div class="form-group">
+                <p>
+                  <input type="checkbox" />
+                  Current School
+                </p>
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  placeholder="Program Description"
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                class="btn btn-primary my-1"
+                class="form-control"
+              />
+              <a class="btn btn-light my-1" href="dashboard.html">Go Back</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------------
+                          End Add Education 
+-------------------------------------------------->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
